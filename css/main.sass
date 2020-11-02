@@ -1,0 +1,313 @@
+*
+    box-sizing: border-box
+    list-style-type: none
+    font-family: 'Montserrat', sans-serif
+    margin: 0
+
+.button
+    padding: 15px 36px 15px
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    background-color: #4985FF
+    border-radius: 30px
+    outline: none
+    border: none
+    color: #ffffff
+    text-decoration: none
+
+.link
+    font-weight: 500
+    font-size: 16px
+    line-height: 20px
+    color: #4985FF
+
+.title
+    font-size: 36px     
+    line-height: 53px
+    color: #323232
+
+.text
+    font-size: 16px
+    line-height: 25px
+    color: #999999
+
+.container
+    width: 1200px
+    margin: 0 auto
+
+header
+    box-sizing: 
+    display: flex
+    position: absolute
+    top: 0
+    left: 0
+    border-bottom: 1px solid rgba(161, 161, 161, 1)
+    width: 100%
+    .menu
+        display: flex
+        flex-direction: row
+        justify-content: flex-end
+        li
+            padding: 40px 0 40px 0
+            margin-left: 40px
+            &:hover
+                border-bottom: 2px solid #FFFFFF
+            a
+                color: #fff
+                font-weight: 500
+                font-size: 16px
+                line-height: 20px
+                text-decoration: none
+                
+
+.hero
+    display: flex
+    align-items: center
+    height: 100vh
+    background-image: url(../images/background.png)
+    background-repeat: no-repeat
+    &__content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        p
+            font-weight: 500
+            font-size: 16px
+            line-height: 20px
+            color: #fff
+        h1
+            font-weight: 800
+            font-size: 48px
+            line-height: 64px
+            color: #fff
+            padding-top: 20px
+            padding-bottom: 50px
+
+.services
+    padding-bottom: 105px
+    &__wrap
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+    &__content
+        padding-bottom: 120px
+        text-align: center
+        h2
+            padding-bottom: 50px
+            margin-top: 110px
+    .items
+        display: flex
+        flex-direction: row
+        margin-bottom: 60px
+    &__item
+        display: flex
+        &-img
+            transform: translateY(-50%)
+        &-content
+            margin-left: 17px
+            h3
+                margin-bottom: 12px
+                font-size: 18px
+                line-height: 22px
+            p
+                font-size: 14px
+                line-height: 22px
+                color: #999
+
+.about-us
+    padding-top: 100px
+    background-color: #F6F6F8
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 90px
+        border-bottom: 1px solid #E0E0E0
+    &__content
+        width: 489px
+        p
+            margin: 40px 0 30px 0
+    &__items
+        padding-top: 70px
+        padding-bottom: 70px
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        .item
+            display: flex
+            flex-wrap: wrap
+            width: 104px
+            &-img
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-right: 15px
+
+.all-services
+    padding-top: 100px
+    padding-bottom: 85px
+    background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+    position: relative
+    z-index: 3
+    &::after
+        position: absolute
+        content: ""
+        height: 482px
+        width: 100%
+        background-color: #fff
+        top: 55%
+        z-index: -1
+    &__title
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 70px
+        h2
+            width: 540px
+            color: #fff
+    &__items
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 85px
+        border-bottom: 1px solid #E0E0E0
+    &__item
+        width: 350px
+        h3
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+            margin: 30px 0
+            span
+                color: #4985FF
+        p
+            margin-bottom: 30px
+
+.projects
+    padding: 100px 0 130px
+    background-color: #F6F6F8
+    position: relative
+    z-index: 3
+    &__wrap
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__content
+        display: flex
+        flex-direction: column
+        text-align: center
+        width: 740px
+        h2
+            margin-bottom: 50px
+    &__images
+        padding: 70px 0 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        .img-wrap
+            margin-right: 30px
+
+.video
+    position: relative
+    z-index: 2
+    text-align: center
+    padding-bottom: 85px
+    background-color: #F6F6F8
+    .container
+        padding-bottom: 85px
+        border-bottom: 1px solid #E0E0E0
+    img
+        position: absolute
+        width: 100%
+        height: 70%
+        object-fit: cover
+        top: 0
+        left: 0
+        z-index: -1
+        opacity: .9
+    &-content
+        padding-top: 70px
+        h2, p
+            color: #fff
+    iframe
+        padding-top: 70px
+
+.subscribe
+    text-align: center
+    background-color: #F6F6F8
+    padding-bottom: 85px
+    h3
+        font-weight: 600
+        font-size: 18px
+        line-height: 22px
+        margin-bottom: 20px
+    &-form
+        display: inline-block
+        border: 1px solid #F2F2F2
+        box-sizing: border-box
+        box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25)
+        border-radius: 30px
+        width: 490px
+        margin: 30px 0 35px 0
+        .email
+            font-size: 13px
+            line-height: 21px
+            border: none
+            border-radius: 10px
+            outline: none
+            width: 300px
+            padding-left: 32px
+            background-color: #F6F6F8
+        .button
+            border-top-left-radius: 0
+            border-bottom-left-radius: 0
+            &:hover
+                cursor: pointer
+    &-text
+        font-size: 13px
+        line-height: 21px
+        color: #999
+
+.footer
+    background-color: #F6F6F8
+    padding-top: 70px
+    &-items
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding-bottom: 70px
+        border-bottom: 1px solid #E0E0E0
+    &-item
+        h3
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+        li
+            padding-top: 30px
+            list-style-image: url(../images/right-arrow.png)
+            &:first-child
+                padding-top: 35px
+        a
+            font-size: 14px
+            line-height: 22px
+            text-decoration: none
+            color: #999999
+            padding-left: 10px
+        .mail
+            list-style-image: url(../images/mail.png)
+        .phone
+            list-style-image: url(../images/call.png)
+        .place
+            list-style-image: url(../images/place.png)
+    p
+        text-align: center
+        font-size: 13px
+        line-height: 21px
+        color: #999999
+        padding: 30px 0
