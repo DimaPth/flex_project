@@ -422,6 +422,10 @@ header .menu li a {
   color: #fff;
 }
 
+.video-content h2 {
+  padding-bottom: 30px;
+}
+
 .video iframe {
   padding-top: 70px;
 }
